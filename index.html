@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading method win rate calculation</title>
+    <script src="./js/test.js"></script>
+    <link rel="stylesheet" href="./css/CaculateWinrate.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1> <b>Win rate:</b> <span class="Result">0</span>%</h1>
+        <div class="lable-row">
+            <h3 class="left">win</h3>
+            <h3 class="right">lose</h3>
+        </div>
+        <form action="">
+            <div class="win count">
+                <input id="win-number" type="text" min="0" placeholder="Win">
+                <button onclick="backtest('minus-win-btn')" id="minus-win-btn" class="minus" type="button">-</button>
+                <button onclick="backtest('plus-win-btn')" id="plus-win-btn" class="plus" type="button">+</button>
+            </div>
+            <div class="lose count">
+                <input id="lose-number" type="text" min="0" placeholder="Lose">
+                <button onclick="backtest('minus-lose-btn')" id="minus-lose-btn" class="minus" type="button">-</button>
+                <button onclick="backtest('plus-lose-btn')" id="plus-lose-btn" class="plus" type="button">+</button>
+            </div>
+            <div class="submit-content">
+                <button onclick="caculateInput()" type="button" class="calutate">Caculate</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
